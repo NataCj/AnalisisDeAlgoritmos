@@ -10,9 +10,9 @@ public class FreightTransport {
 
     public static void main(String[] args) {
         //Conductor
-        Driver drive1= new Driver("Manuel","137664327",47);
-        Driver drive2= new Driver("Daniel","137664787",20);
-        Driver drive3= new Driver();
+        Driver drive1= new Driver("Manuel","137664327",47);  //9
+        Driver drive2= new Driver("Daniel","137664787",20); //9
+        Driver drive3= new Driver(); //
         
         
         //Registrar vehiculo

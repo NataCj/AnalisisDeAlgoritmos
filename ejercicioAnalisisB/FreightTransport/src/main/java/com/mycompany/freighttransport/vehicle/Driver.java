@@ -3,52 +3,50 @@ package com.mycompany.freighttransport.vehicle;
 
 
 public class Driver {
-    private String name;
-    private String id;
-    private int age;
+    private String name;  //1
+    private String id;    //1
+    private int age;      //1
 
-    public Driver(String name, String id, int age) {
-        this.name = name;
-        this.id = id;
-        this.age = age;
-    }
+    public Driver(String name, String id, int age) { //1
+        this.name = name; //1
+        this.id = id;     //1
+        this.age = age;   //1
+    }//1 -> 5
 
-    public Driver() {
-        this.name="";
-        this.id="";
-        this.age=0;
-    }
+    public Driver() {     //1
+        this.name="";     //1
+        this.id="";       //1
+        this.age=0;       //1
+    }                     //1 -> 5
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { //1
+        return name;      //1
+    }//1 -> 3
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {//1
+        this.name = name; //1
+    }//1->3
 
-    public String getId() {
-        return id;
-    }
+    public String getId() {//1
+        return id;       //1
+    }//1 -> 3
 
-    public void setId(String id) {
-        this.id = id;
-    }
+    public void setId(String id) { // 1
+        this.id = id;   // 1
+    } // 1 -> 3
 
-    public int getAge() {
-        return age;
-    }
+    public int getAge() {//1
+        return age;  //1   
+    }//1-> 3
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    public void setAge(int age) {//1
+        this.age = age;  //1
+    }//1-> 3
 
     @Override
-    public String toString() {
-        return "Driver{" + "name=" + name + ", id=" + id + ", age=" + age + '}';
-    }
+    public String toString() {//1
+        return "Driver{" + "name=" + name + ", id=" + id + ", age=" + age + '}'; //1
+    }//1 -> 3
     
-    
-    
-    
+    //34
 }

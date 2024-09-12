@@ -6,73 +6,73 @@ import java.util.ArrayList;
 
 
 public class Vehicle {
-    private String vehicleType; //tipo de vehiculo
+    private String vehicleType; //tipo de vehiculo   //1
     //private CantPackages loadingCapacity;
-    private int kmTours;
-    private String plate;
-    private Driver drive;
-    private ArrayList<Vehicle> listVehicles;
+    private int kmTours;                             //1
+    private String plate;                            //1
+    private Driver drive;                            //1
+    private ArrayList<Vehicle> listVehicles;         //n
     
-    public Vehicle(String vehicleType, int kmTours,String plate, Driver drive) {
-        this.vehicleType = vehicleType;
-        this.kmTours = kmTours;
+    public Vehicle(String vehicleType, int kmTours,String plate, Driver drive) {//1
+        this.vehicleType = vehicleType; //1
+        this.kmTours = kmTours; //1
        // this.loadingCapacity= new CantPackages();
-        this.plate=plate;
-        this.drive=drive;
-        this.listVehicles=new ArrayList();
-    }
+        this.plate=plate; //1
+        this.drive=drive; //1
+        this.listVehicles=new ArrayList(); //1
+    } //1 -> 6
 
-    public String getVehicleType() {
-        return vehicleType;
-    }
+    public String getVehicleType() { //1
+        return vehicleType; //1
+    } //1 -> 3
 
-    public void setVehicleType(String vehicleType) {
-        this.vehicleType = vehicleType;
-    }
+    public void setVehicleType(String vehicleType) { //1
+        this.vehicleType = vehicleType; //1
+    } //1 -> 3
 
-    public int getKmTours() {
-        return kmTours;
-    }
+    public int getKmTours() { //1
+        return kmTours; //1
+    } //1 -> 3
 
-    public void setKmTours(int kmTours) {
-        this.kmTours = kmTours;
-    }
+    public void setKmTours(int kmTours) {//1
+        this.kmTours = kmTours; //1
+    }//1 -> 3
 
-    public String getPlate() {
-        return plate;
-    }
+    public String getPlate() { //1
+        return plate; //1
+    }//1 -> 3
 
 //    public void setPlate(String plate) {
 //        this.plate = plate;
 //    }
 
-    public Driver getDrive() {
-        return drive;
-    }
+    public Driver getDrive() { //1
+        return drive; //1
+    }//1 -> 3
 
-    public void setDrive(Driver drive) {
-        this.drive = drive;
-    }
+    public void setDrive(Driver drive) {//1
+        this.drive = drive; //1
+    }//1 -> 3
 
-    public ArrayList<Vehicle> getListVehicles() {
-        return listVehicles;
-    }
+    public ArrayList<Vehicle> getListVehicles() { //1
+        return listVehicles; //1
+    }//1 -> 3
 
-    public void setListVehicles(ArrayList<Vehicle> listVehicles) {
-        this.listVehicles = listVehicles;
-    }
+    public void setListVehicles(ArrayList<Vehicle> listVehicles) { //1
+        this.listVehicles = listVehicles; //1
+    }//1 -> 3
 
     
-    public void registerVehicle(Vehicle vehicle){
-        for(Vehicle car: listVehicles){
-            car.registerVehicle(vehicle);
-        }
-    }
+    public void registerVehicle(Vehicle vehicle){ //1
+        for(Vehicle car: listVehicles){ //n + 1
+            car.registerVehicle(vehicle); // n
+        }//1
+    }//1 -> 2n+4
 
     @Override
-    public String toString() {
-        return "Vehicle{" + "vehicleType=" + vehicleType + ", kmTours=" + kmTours + ", plate=" + plate + ", drive=" + drive + ", listVehicles=" + listVehicles + '}';
-    }
+    public String toString() { //1
+        return "Vehicle{" + "vehicleType=" + vehicleType + ", kmTours=" + kmTours + ", plate=" + plate + ", drive=" + drive + ", listVehicles=" + listVehicles + '}'; //1
+    }//1 -> 3
     
     
 }
