@@ -4,14 +4,14 @@ package com.mycompany.freighttransport.vehicle;
 import com.mycompany.freighttransport.packages.CantPackages;
 import java.util.ArrayList;
 
-
+// 3n+14 
 public class Vehicle {
     private String vehicleType; //tipo de vehiculo   //1
     //private CantPackages loadingCapacity;
     private int kmTours;                             //1
     private String plate;                            //1
     private Driver drive;                            //1
-    private ArrayList<Vehicle> listVehicles;         //n
+    private ArrayList<Vehicle> listVehicles;         //n -> n + 4
     
     public Vehicle(String vehicleType, int kmTours,String plate, Driver drive) {//1
         this.vehicleType = vehicleType; //1
@@ -74,5 +74,5 @@ public class Vehicle {
         return "Vehicle{" + "vehicleType=" + vehicleType + ", kmTours=" + kmTours + ", plate=" + plate + ", drive=" + drive + ", listVehicles=" + listVehicles + '}'; //1
     }//1 -> 3
     
-    
+    //3n + 44
 }
